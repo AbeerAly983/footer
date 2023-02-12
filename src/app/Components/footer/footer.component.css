@@ -1,144 +1,120 @@
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  border-width: 20px;
-  transition: all 0.5s ease;
-  border-radius: 3%;
-}
-
-.row :hover {
-  opacity: 1;
-  box-shadow: 0 0 15px 5px #dbdbdb;
-}
-.img {
-  margin: 5px;
-  cursor: pointer;
-  height: 50%;
-  border-radius: 10%;
-}
-
-/** {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.container {
-  max-width: 1170px;
-  margin: auto;
+footer {
+  width: 100%;
+  padding: 10px;
+  background-color: #dbdbdb;
 }
-.row {
+.all-links {
   display: flex;
-  flex-wrap: wrap;
-  border-width: 20px;
-  transition: all 0.5s ease;
-  border-radius: 3%;
+  justify-content: center;
+  margin: 10px 0;
+  margin-left: 10%;
 }
-.row :hover {
-  opacity: 1;
-  box-shadow: 0 0 15px 5px #dbdbdb;
+.all-links .fa-angle-down {
+  opacity: 0;
 }
-ul {
-  list-style: none;
+input {
+  display: none;
 }
-.footer {
-  background-color: #53a39e;
-  padding: 70px 0;
-}
-.footer-col {
+.list {
   width: 25%;
-  padding: 0 15px;
+  padding: 12px;
 }
-.footer-col h4 {
-  font-size: 18px;
-  color: #ffffff;
-  text-transform: capitalize;
-  margin-bottom: 35px;
-  font-weight: 500;
-  position: relative;
-}
-.footer-col h4::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  background-color: #e91e63;
-  height: 2px;
-  box-sizing: border-box;
-  width: 50px;
-}
-.footer-col ul li:not(:last-child) {
-  margin-bottom: 10px;
-}
-.footer-col ul li a {
-  font-size: 16px;
-  text-transform: capitalize;
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 300;
-  color: #bbbbbb;
-  display: block;
-  transition: all 0.3s ease;
-}
-.footer-col ul li a:hover {
-  color: #ffffff;
-  padding-left: 8px;
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
 }
 
-.footer-col .social-links a {
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  background-color: rgba(255, 255, 255, 0.2);
-  margin: 0 10px 10px 0;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  color: #ffffff;
+.list ul {
+  list-style: none;
+  margin-top: 14px;
+}
+.list ul li {
+  margin-top: 7px;
+}
+.link a {
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 7px;
+  color: #707070;
   transition: all 0.5s ease;
 }
-.footer-col .social-links a:hover {
-  color: #24262b;
-  background-color: #ffffff;
+.list a:hover {
+  color: #333;
+  padding-left: 7px;
 }
 
-//responsive
-@media (max-width: 767px) {
-  .footer-col {
-    width: 50%;
-    margin-bottom: 30px;
-  }
+.social {
+  text-align: center;
+  margin-top: 10px;
 }
-@media (max-width: 574px) {
-  .footer-col {
+.social .title {
+  color: #5d5c5c;
+}
+
+.social a {
+  text-align: center;
+  font-size: 24px;
+  margin: 0 8px;
+  transition: all 0.5s ease;
+}
+.social a .fa-facebook-f:hover {
+  color: #4267b2;
+}
+.social a .fa-youtube-play:hover {
+  color: #ff0000;
+}
+.social a .fa-telegram:hover {
+  color: #1d2bf2;
+}
+.social a .fa-instagram:hover {
+  color: #e1306c;
+}
+.copyrights {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 800px) {
+  .all-links {
+    flex-direction: column;
+  }
+  .all-links .title {
+    width: 100%;
+    border-bottom: #c3c2c2 solid 1px;
+    padding: 10px;
+  }
+  .all-links .fa-angle-down {
+    opacity: 1;
+    font-size: 30px;
+    font-weight: 400;
+    cursor: pointer;
+    float: right;
+
+    transition: all 0.5s ease;
+  }
+  .all-links .fa-angle-down:hover {
+    box-shadow: 0 0 15px 5px #dbdbdb;
+    border-radius: 3%;
+  }
+  .list {
     width: 100%;
   }
+  .list ul {
+    min-height: 80px;
+    padding: 10px;
+    display: none;
+  }
+  [id^="btn"]:checked + ul {
+    display: block;
+  }
+  hr {
+    display: none;
+  }
 }
-.new {
-  padding: 25px 20px;
-  color: #ffffff;
-  font-size: medium;
-}
-.social {
-  padding: 10px;
-  color: #ffffff;
-}
-.team {
-  background-color: #b6b8bc;
-}
-.team .box h4 {
-  background-color: rgb(152, 152, 180);
-}
-.img-fluid {
-  margin: 5px;
-  cursor: pointer;
-  height: 50%;
-  border-radius: 10%;
-}
-.one {
-  margin: 5px;
-  border-radius: 10%;
-}
-.from-control {
-  border-radius: 300px;
-}
-*/
